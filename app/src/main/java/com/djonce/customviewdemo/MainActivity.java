@@ -1,8 +1,13 @@
 package com.djonce.customviewdemo;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.djonce.customviewdemo.drawable.CircleImage;
 
 /**
  * 继承View的自定义控件步骤
@@ -18,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Bitmap bitmap = BitmapFactory.decodeResource(
+                        getResources(),
+                        R.drawable.image);
+        ((ImageView)findViewById(R.id.circleImage))
+                .setImageDrawable(new CircleImage(bitmap));
     }
 
 

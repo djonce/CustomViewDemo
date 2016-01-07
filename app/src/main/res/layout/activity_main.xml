@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-<!--    <com.djonce.customviewdemo.CustomProgressBar
+<!--    <com.djonce.customviewdemo.view.CustomProgressBar
         android:layout_width="200dp"
         android:layout_height="200dp"
         app:firstColor="#774"
@@ -20,12 +20,18 @@
         app:speed="100"
         />-->
 
-    <com.djonce.customviewdemo.CustomProgressBar
+    <com.djonce.customviewdemo.view.CustomProgressBar
         android:layout_width="200dp"
         android:layout_height="200dp"
         app:firstColor="#FFC0CB"
         app:secondColor="#00008B"
         app:circleWidth="20dp"
         app:speed="120"
+        />
+
+    <ImageView
+        android:id="@+id/circleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         />
 </LinearLayout>

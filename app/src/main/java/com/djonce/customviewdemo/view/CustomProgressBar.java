@@ -1,4 +1,4 @@
-package com.djonce.customviewdemo;
+package com.djonce.customviewdemo.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,8 +10,10 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 
+import com.djonce.customviewdemo.R;
+
 /**
- *  自定义进度条
+ *  继承View自定义进度条
  *
  * Created by wangj on 2016/1/6
  */
