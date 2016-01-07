@@ -2,14 +2,14 @@ package com.djonce.customviewdemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+import android.widget.TextView;
 
 /**
- * ¼Ì³ĞViewµÄ×Ô¶¨Òå¿Ø¼ş²½Öè
- * a. value ÎÄ¼ş¼ĞÏÂ£¬¶¨ÒåattrsÊôĞÔ
- * b. ¹¹ÔìÆ÷ÖĞ³õÊ¼»¯£¬¶¨ÒåµÄÊôĞÔ
- * c. ¸ù¾İĞèÇóÊÇ·ñÖØĞ´onMeasure·½·¨
- * d. ÊµÏÖonDrawÂß¼­
+ * ç»§æ‰¿Viewçš„è‡ªå®šä¹‰æ§ä»¶æ­¥éª¤
+ * a. value æ–‡ä»¶å¤¹ä¸‹ï¼Œå®šä¹‰attrså±æ€§
+ * b. æ„é€ å™¨ä¸­åˆå§‹åŒ–ï¼Œå®šä¹‰çš„å±æ€§
+ * c. æ ¹æ®éœ€æ±‚æ˜¯å¦é‡å†™onMeasureæ–¹æ³•
+ * d. å®ç°onDrawé€»è¾‘
  *
  */
 public class MainActivity extends AppCompatActivity {
@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
 
 

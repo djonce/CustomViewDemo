@@ -67,7 +67,6 @@ public class CustomProgressBar extends View {
 
         for(int i=0; i<n; i++){
             int attr = a.getIndex(i);
-
             switch (attr) {
                 case R.styleable.CustomProgressBar_firstColor:
                     mFirstColor = a.getColor(attr, Color.GREEN);
@@ -84,12 +83,11 @@ public class CustomProgressBar extends View {
                     mSpeed = a.getInt(attr, 20);
                     break;
             }
-
-            a.recycle();
-
-            mPaint = new Paint();
-            startWork();
         }
+
+        a.recycle();
+        mPaint = new Paint();
+        startWork();
     }
 
     private void startWork() {
@@ -126,14 +124,17 @@ public class CustomProgressBar extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        int center = getWidth() / 2; //获取圆心x坐标
+        int center = getWidth() / 2;            //获取圆心x坐标
         int radius = center - mCircleWidth / 2; // 半径
-        mPaint.setStrokeWidth(mCircleWidth); // 圆环的宽度
-        mPaint.setAntiAlias(true);  //消除锯齿
-        mPaint.setStyle(Paint.Style.STROKE); //设置空心
+        mPaint.setStrokeWidth(mCircleWidth);    // 圆环的宽度
+        mPaint.setAntiAlias(true);              //消除锯齿
+        mPaint.setStyle(Paint.Style.STROKE);    //设置空心
 
-        RectF oval = new RectF(center - radius, center- radius,
-                center + radius, center + radius);  //定义圆弧大小界限
+        RectF oval = new RectF(
+                         center - radius,
+                         center- radius,
+                         center + radius,
+                         center + radius);  //定义圆弧大小界限
         if(!isNext) {
             // 第一颜色的圈完成后，开始第二圈颜色
             mPaint.setColor(mFirstColor);

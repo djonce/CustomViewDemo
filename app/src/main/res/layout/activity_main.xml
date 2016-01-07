@@ -11,14 +11,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <com.djonce.customviewdemo.CustomProgressBar
+<!--    <com.djonce.customviewdemo.CustomProgressBar
         android:layout_width="200dp"
         android:layout_height="200dp"
         app:firstColor="#774"
         app:secondColor="#766"
         app:circleWidth="20dp"
         app:speed="100"
-        />
+        />-->
 
     <com.djonce.customviewdemo.CustomProgressBar
         android:layout_width="200dp"
