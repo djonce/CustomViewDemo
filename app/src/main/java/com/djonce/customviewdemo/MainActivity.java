@@ -37,4 +37,8 @@ public class MainActivity extends AppCompatActivity {
     public void doClick(View view ) {
         startActivity(new Intent(this, MaterailPullToRefresh.class));
     }
+
+    public void doClick2(View view) {
+        startActivity(new Intent(this, LoadMoreAcitity.class));
+    }
 }

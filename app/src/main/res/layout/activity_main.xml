@@ -42,6 +42,13 @@
         android:id="@+id/button"
         android:onClick="doClick" />
 
+    <Button
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="doClick2" />
 
 
 </LinearLayout>

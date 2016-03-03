@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MaterailPullToRefresh"/>
+        <activity android:name=".LoadMoreAcitity"/>
     </application>
 
 </manifest>
